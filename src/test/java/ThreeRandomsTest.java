@@ -31,7 +31,7 @@ class ThreeRandomsTest {
 	void Should_ReturnFalse_When_BothIntsSameSign () {
 		ThreeRandoms t = new ThreeRandoms ();
 		boolean result = t.flipFlop(-9, -7);
-		assertFalse(t);
+		assertFalse(result);
 	}
 
 	@DisplayName("flipFlop different signs")
@@ -39,7 +39,7 @@ class ThreeRandomsTest {
 	void Should_ReturnTrue_When_BothIntsDiffSign () {
 		ThreeRandoms t = new ThreeRandoms ();
 		boolean result = t.flipFlop(9, -7);
-		assertTrue(t);
+		assertTrue(result);
 	}
 
 }
